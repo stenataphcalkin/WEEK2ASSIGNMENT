@@ -17,3 +17,10 @@ What went really well and what could have gone better?
 ## Resources
 
 [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) 
+
+Photos granted by
+[Shaylyn](https://unsplash.com/@mpadb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+[Eleanor Brookes](https://unsplash.com/@eleanorbrooke?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+[Ahmed](https://unsplash.com/@mutecevvil?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+[Reagen Freeman](https://unsplash.com/@rfree19?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+[Giulio Fabi](https://unsplash.com/@giuliofabi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
