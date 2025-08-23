@@ -12,30 +12,43 @@ body {
   height: 60px;
   width: auto;
   display: flex;
-  /* gap: 10px; - may have to substitute for magin, play about with later */
 }
 
 #thumbnail-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  width: 100%;
+  justify-content: center;
   /* play with this for styling later */
 }
 
 .thumbnail-image {
   width: auto;
-  height: 100px;
+  height: 50px;
   cursor: pointer;
 }
 
 .large-image-container {
-  width: auto;
+  width: 100vw;
   height: 100vh;
 }
 
 .largeImage {
-  width: auto;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
 }
 
 img {
-  width: auto;
+  width: 100%;
   height: 100vh;
+}
+
+@media (max-width: 600px) {
+  #thumbnail-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
 }

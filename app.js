@@ -36,44 +36,20 @@ function createThumbnails() {
 createThumbnails();
 
 //TODO: I need to create my large images
-
-// function createLargeImagesHandler(){
 function createLargeImageHandler(i) {
-  // select the large-image-container
   const largeImageContainer = document.getElementById("large-image-container");
+  largeImageContainer.innerHTML = "";
+  const img = document.createElement("img");
+  img.setAttribute("src", images[i].images);
+  img.setAttribute("alt", images[i].altText);
+  img.classList.add("largeImage");
+  largeImageContainer.appendChild(img);
 }
-// delete the current image in the large-image-container (Actual code below)
-largeImageContainer.innerHTML = null;
-// create an image
-const img = document.createElement("img");
 
-// update the SRC and alt values
-img.setAttribute("src", images[i].images);
-img.setAttribute("alt", images[i].altText);
+createLargeImageHandler(0);
 
-// add a className for styling
-img.className.add("largeImage");
-
-// append the img to the container
-
-largeImagecontainer.appendChild(img);
-
-// LOOPS ARE NOT. REPEAT. NOT. NEEDED FOR THIS ONE.
-//Add this event handler to the thumbnail event
-//make sure you call the createThumbnails function
-
-//-----------------------------------------------------------------------------------------------------------------------------------------
-//THUMBNAIL TASK
-// Select the DOM element (thumbnail-container) to contain our thumbnails
-// updateDisplayImage(images[currentImageIndex])
-// createThumbnails()
-//THIS IS A REPETITIVE TASK --> Loops through our array using the length property
-//loop inside
-// - create img element
-// - update src and alt attributes of the img element to match those in the array(PARAMETERS - Manny hint)
-// - give each img a className (need to make them small. img.className etc)
-// let thumbnails = thumbnailImage('.thumbnailImage');
-// - add an event listener to each image --> the event handle of this listener is the function you write to create large images (MANNY HINT)
-// - append the created images to the thumbnail-container
-// thumbnailContainer.appendChild(thumbnailImage);
-//
+// Requirements
+// ✅ Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
+// ✅ Implement at least one meaningful media query so that there is a noticeable change between mobile and desktop view (an example is to change where the ‘thumbnail bar’ is positioned).
+// ✅ Ensure all images have appropriate alt text attributes for accessibility.
+// ✅ Correctly use event handlers to switch images based on user interactions.
