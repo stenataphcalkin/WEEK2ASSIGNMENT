@@ -37,17 +37,27 @@ createThumbnails();
 
 //TODO: I need to create my large images
 
-createLargeImageHandler(0);
-
-// this task is the event handler for the thumbnail events
 // function createLargeImagesHandler(){
-// select the large-image-container
+function createLargeImageHandler(i) {
+  // select the large-image-container
+  const largeImageContainer = document.getElementById("large-image-container");
+}
 // delete the current image in the large-image-container (Actual code below)
-// largeImageContainer.innerHTML = null OR """
+largeImageContainer.innerHTML = null;
 // create an image
+const img = document.createElement("img");
+
 // update the SRC and alt values
+img.setAttribute("src", images[i].images);
+img.setAttribute("alt", images[i].altText);
+
 // add a className for styling
+img.className.add("largeImage");
+
 // append the img to the container
+
+largeImagecontainer.appendChild(img);
+
 // LOOPS ARE NOT. REPEAT. NOT. NEEDED FOR THIS ONE.
 //Add this event handler to the thumbnail event
 //make sure you call the createThumbnails function

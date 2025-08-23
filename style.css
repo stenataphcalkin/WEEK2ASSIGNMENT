@@ -24,3 +24,18 @@ body {
   height: 100px;
   cursor: pointer;
 }
+
+.large-image-container {
+  width: auto;
+  height: 100vh;
+}
+
+.largeImage {
+  width: auto;
+  height: 100vh;
+}
+
+img {
+  width: auto;
+  height: 100vh;
+}
