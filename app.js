@@ -13,6 +13,20 @@ const images = [
     altText:
       "A couple of sheet ghosts with hats playing hide and seek amongst some trees",
   },
+  {
+    images: "./Images/ReaganFreeman.jpg",
+    altText: "A pair of sheet ghosts under a bridge by the river",
+  },
+  {
+    images: "./Images/Shaylyn1.jpg",
+    altText:
+      "A gang of sheet ghosts by a log near the start of a beach-side forest",
+  },
+  {
+    images: "./Images/Shaylyn2.jpg",
+    altText:
+      "A hang of sheet ghosts surrounding and stood on a rock by the beach and woodland. All immitating some kind of band promo photo",
+  },
 ];
 // console.log(images) THESE RETURN! WOO!
 
@@ -46,7 +60,7 @@ function createLargeImageHandler(i) {
   largeImageContainer.appendChild(img);
 }
 
-createLargeImageHandler(0);
+createLargeImageHandler(5);
 
 // Requirements
 // ✅ Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
