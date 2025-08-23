@@ -1,36 +1,26 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: pink;
 }
 
-img.thumbnail {
-    width:50px;
-    height:70px;
+.thumbnail-container {
+  height: 60px;
+  width: auto;
+  display: flex;
+  /* gap: 10px; - may have to substitute for magin, play about with later */
 }
 
-
-.thumbnailImage {
-    width:50px;
-    height:70px;
+#thumbnail-container {
+  /* play with this for styling later */
 }
 
-.thumbnail-Container {
-    height: 60px;
-    width: auto;
-    display: flex;
-}
-
-.thumbnailContainer {
-    height: 60px;
-    width: auto;
-    display: flex;
-}
-
-img.largeImage {
-    
+.thumbnail-image {
+  width: auto;
+  height: 100px;
+  cursor: pointer;
 }
