@@ -68,3 +68,25 @@ function createLargeImageHandler(i) {
 }
 
 createLargeImageHandler(5);
+//Todo: movement with buttons
+//Buttons
+//Previous Button
+
+// define full size current image 'position'
+let currentIndex = 0;
+// target previous button
+const previousButton = document.getElementById("previous");
+//action to return on click
+previousButton.addEventListener("click", () => {
+  //let action define new current position in image queue and  circle back
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  //create new image relevant to position
+  createLargeImageHandler(currentIndex);
+});
+
+//Next Button
+const nextButton = document.getElementById("next");
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  createLargeImageHandler(currentIndex);
+});

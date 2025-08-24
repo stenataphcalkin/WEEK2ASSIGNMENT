@@ -12,6 +12,8 @@ Due to the ratio of the images when this was previously set to fill the full vie
 
 Got myself stuck on the event listener a few times by forgetting to write in function in some lines.
 
+Struggled to find resources to comprehensively explain the navigation buttons without use of elements we weren't using like lightboxes. Eventually located resources on StackOverflow and codingartistweb. Furthered knowledge by being able to loop the navigation buttons round rather than stopping at image 0 and 5 before needing to use the other button to go back/forwards, which is a personal irk, so this was very much approved of and has been saved to my resource index.
+
 # Requirements met:
 
 ✔ - Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
@@ -82,6 +84,8 @@ Be a bit more proactive in the Discord calls and asking for help in there.
 - [CSS Gradient](https://cssgradient.io/)
 - [CSS Tricks](https://css-tricks.com/)
 - [Gemini](https://gemini.google.com) - for locating typos and mismatched casing on classes etc. This was my most frequent issue.
+- [CodingArtistWeb](https://codingartistweb.com/)
+- [StackOverflow](https://stackoverflow.com/questions/65553058/next-prev-button-for-modal-with-javascript)
 
 ## Photos granted by:
 
@@ -90,7 +94,3 @@ Be a bit more proactive in the Discord calls and asking for help in there.
 - [Ahmed](https://unsplash.com/@mutecevvil?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Reagen Freeman](https://unsplash.com/@rfree19?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - [Giulio Fabi](https://unsplash.com/@giuliofabi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images
-https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
-https://www.w3schools.com/css/css_rwd_mediaqueries.asp

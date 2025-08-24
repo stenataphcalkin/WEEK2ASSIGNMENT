@@ -12,6 +12,8 @@ body {
   );
 }
 
+/* Thumbnail */
+
 .thumbnail-container {
   height: 60px;
   width: auto;
@@ -33,6 +35,33 @@ body {
   cursor: pointer;
 }
 
+/* Buttons  */
+
+#next {
+  right: 15px;
+  top: 50%;
+}
+
+#previous {
+  left: 10px;
+  top: 50%;
+}
+
+#next,
+#previous {
+  position: absolute;
+  font-size: 1rem;
+  padding: 5px 5px;
+  cursor: pointer;
+  border: double;
+  border-radius: 20px;
+  background-color: rgba(255, 166, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.541);
+  color: white;
+}
+
+/* Gallery */
+
 #large-image-container {
   display: flex;
 }
@@ -42,6 +71,8 @@ img {
   height: 100vh;
   object-fit: contain;
 }
+
+/* Media Query */
 
 @media (max-width: 600px) {
   #thumbnail-container {
