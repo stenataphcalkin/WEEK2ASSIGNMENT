@@ -3,29 +3,35 @@ const images = [
   {
     images: "./Images/Ahmed.jpg",
     altText: "A single sheet ghost wearing glasses in the forest",
+    // srcset: "./Images/600w/Ahmed600w.jpg, 600w",
   },
   {
     images: "./Images/EleanorBrooke.jpg",
     altText: "A couple of sheet ghosts holding hands in the forest",
+    // srcset: "./Images/600w/EleanorBrooke600w.jpg 600w",
   },
   {
     images: "./Images/GiulioFabi1.jpg",
     altText:
       "A couple of sheet ghosts with hats playing hide and seek amongst some trees",
+    // srcset: "./Images/600w/GiulioFabi1600w.jpg",
   },
   {
     images: "./Images/ReaganFreeman.jpg",
     altText: "A pair of sheet ghosts under a bridge by the river",
+    // srcset: "./Images/600w/ReaganFreeman600w.jpg",
   },
   {
     images: "./Images/Shaylyn1.jpg",
     altText:
       "A gang of sheet ghosts by a log near the start of a beach-side forest",
+    // srcset: "./Images/600w/Shaylyn1-600w.jpg",
   },
   {
     images: "./Images/Shaylyn2.jpg",
     altText:
       "A hang of sheet ghosts surrounding and stood on a rock by the beach and woodland. All immitating some kind of band promo photo",
+    // srcset: "./Images/600w/Shaylyn2-600w.jpg",
   },
 ];
 // console.log(images) THESE RETURN! WOO!
@@ -37,12 +43,11 @@ function createThumbnails() {
     const thumbnailImage = document.createElement("img");
     thumbnailImage.setAttribute("src", images[i].images);
     thumbnailImage.setAttribute("alt", images[i].altText);
+    // img.srcset = images[i].srcset;
     thumbnailImage.className = "thumbnail-image";
-
     thumbnailImage.addEventListener("click", function () {
       createLargeImageHandler(i);
     });
-
     thumbnailContainer.appendChild(thumbnailImage);
   }
 }
@@ -56,14 +61,10 @@ function createLargeImageHandler(i) {
   const img = document.createElement("img");
   img.setAttribute("src", images[i].images);
   img.setAttribute("alt", images[i].altText);
+  // img.srcset = images[i].srcset;
+
   img.classList.add("largeImage");
   largeImageContainer.appendChild(img);
 }
 
 createLargeImageHandler(5);
-
-// Requirements
-// ✅ Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
-// ✅ Implement at least one meaningful media query so that there is a noticeable change between mobile and desktop view (an example is to change where the ‘thumbnail bar’ is positioned).
-// ✅ Ensure all images have appropriate alt text attributes for accessibility.
-// ✅ Correctly use event handlers to switch images based on user interactions.
